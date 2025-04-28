@@ -10,3 +10,8 @@
 ### Initialise prisma
 
 `npx prisma init` : this will create `.env` file and `prisma` directory.
+
+### Initialise typescript and setup tsconfig.json file
+
+- Add this script inside `package.json` `"dev": "ts-node-dev --respawn --transpile-only src/app.ts",`
+- `npx tsc --init`
