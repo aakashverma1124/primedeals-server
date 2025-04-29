@@ -25,3 +25,9 @@
 - Run `npx prisma generate` to generate prisma client.
 - Run `npx prisma migrate dev --name init`. This will create the table inside the DB. This will also create `migrations` directory inside `prisma` directory.
 - To check if the table got successfully created, run `npx prisma studio`, this will open up a browser window at `http://localhost:5555/` and you will be able to see the `Product` table created over there.
+
+### Seed the data from sample-data.ts
+
+- Copy `db` directory from client inside `src/`
+- Create `seed.ts` file inside `db`
+- And run `npx tsx ./src/db/seed.ts` (might ask to install tsc)
