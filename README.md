@@ -31,3 +31,10 @@
 - Copy `db` directory from client inside `src/`
 - Create `seed.ts` file inside `db`
 - And run `npx tsx ./src/db/seed.ts` (might ask to install tsc)
+
+### Create fetch products api in server.
+
+- Create `services`, `controllers`, and `routes` directories.
+- Create `prisma.ts` inside `db`
+- Create `product.service.ts`, `product.controller.ts`, and `product.routes.ts` and add backend logic in all the files.
+- Add `productRoutes` inside `app.ts`
