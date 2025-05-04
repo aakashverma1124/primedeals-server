@@ -18,9 +18,13 @@ export const getProductBySlug = async (req: Request, res: Response) => {
   try {
     const slug = req.params['slug'];
     const productBySlug = await fetchProductBySlug(slug);
-    res.status(200).json(productBySlug);
+    if (productBySlug === null) {
+      res.status(404).json({ message: 'Product not found.' });
+    } else {
+      res.status(200).json(productBySlug);
+    }
   } catch (error) {
     console.error('[fetchProductBySlug]', error);
-    res.status(404).json({ message: 'Product not found.' });
+    res.status(500).json({ message: 'Some error occured.' });
   }
 };

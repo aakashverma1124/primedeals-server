@@ -44,3 +44,7 @@
 - Add a new route inside `product.routes.ts`
 - Retrieve the product from db inside service layer `product.service.ts`.
 - And finally implement controller `product.controller.ts`.
+
+### Backend fix for null response returned for get product by slug API.
+
+- Handle null case inside `product.controller.ts`.
