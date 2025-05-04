@@ -6,3 +6,7 @@ export const fetchLatestProducts = async () => {
     orderBy: { createdAt: 'desc' },
   });
 };
+
+export const fetchProductBySlug = async (slug: string) => {
+  return await prisma.product.findFirst({ where: { slug: slug } });
+};

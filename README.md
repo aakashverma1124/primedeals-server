@@ -38,3 +38,9 @@
 - Create `prisma.ts` inside `db`
 - Create `product.service.ts`, `product.controller.ts`, and `product.routes.ts` and add backend logic in all the files.
 - Add `productRoutes` inside `app.ts`
+
+### Create fetch product by slug api in server.
+
+- Add a new route inside `product.routes.ts`
+- Retrieve the product from db inside service layer `product.service.ts`.
+- And finally implement controller `product.controller.ts`.
